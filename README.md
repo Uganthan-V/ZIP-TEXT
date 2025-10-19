@@ -74,9 +74,6 @@ zip-file-extractor/
     ├── desktop.png
     ├── mobile.png
 ```
-Example:
-![Desktop View](screenshots/desktop.png)
-![Mobile View](screenshots/mobile.png)
 
 ## 🧱 Notes
 
