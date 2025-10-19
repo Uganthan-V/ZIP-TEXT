@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIP File Content Extractor</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include JSZip library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>ZIP File Content Extractor</h1>
+        <p>Upload a ZIP file to extract and view its contents in a structured format.</p>
+        
+        <!-- File uploader -->
+        <div class="file-upload-wrapper">
+            <label for="zipFileInput" class="file-upload-label">Choose a ZIP File</label>
+            <input type="file" id="zipFileInput" accept=".zip">
+        </div>
+        
+        <!-- Output area -->
+        <h2>Extracted Contents</h2>
+        <textarea id="outputArea" readonly></textarea>
+        
+        <!-- Download button (initially hidden) -->
+        <button id="downloadButton" class="glow-button" style="display: none;">Download Extracted Contents</button>
+        
+        <!-- Error message -->
+        <p id="errorMessage" class="error" style="display: none;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
